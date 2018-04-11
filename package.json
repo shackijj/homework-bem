@@ -28,6 +28,7 @@
   "devDependencies": {
     "babel-plugin-bem-import": "^1.5.2",
     "copy": "^0.3.1",
+    "device": "^0.3.9",
     "jest-cli": "^22.0.6",
     "rimraf": "^2.6.2"
   },

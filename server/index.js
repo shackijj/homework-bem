@@ -1,17 +1,15 @@
 const express = require('express');
 const device = require('device');
-const path = require('path');
 
 const app = express();
 
-app.use((req, res, next) => {
-    const url = req.url;
+app.get('/detect', (req, res) => {
     const userAgent = req.header('user-agent');
     const { type } = device(userAgent);
-    req.url = `${type}${url}`;
+    res.cookie('device', type, { maxAge: 900000 });
     
-    next('route');
+    const referrer = req.header('referer');
+    res.redirect(referrer);
 });
 
-app.use(express.static(path.join(__dirname, '../builds')))
 app.listen(3000);
