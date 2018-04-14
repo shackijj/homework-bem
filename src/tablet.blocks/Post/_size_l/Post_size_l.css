@@ -1,0 +1,20 @@
+@media (max-width: 720px) {
+  .Post_size_l {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+
+  .Post_size_l .Post-Image,
+  .Post_size_l .Post-Title,
+  .Post_size_l .Post-Image,
+  .Post_size_l .Post-Description {
+    grid-row: auto;
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+  }
+  .Post_size_l .Post-LikeButton,
+  .Post_size_l .Post-OptionsButton {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+}
