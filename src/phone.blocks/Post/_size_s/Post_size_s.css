@@ -1,0 +1,21 @@
+@media (max-width: 550px) {
+  .Post_size_s {
+    grid-column: span 3;
+  }
+
+  .Post_size_s .Post-OptionsButton {
+    align-self: start;
+  }
+}
+
+@media (max-width: 450px) {
+  .Post_size_s {
+    grid-column: span 6;
+    height: auto;
+  }
+  .Post_size_s .Post-Image {
+    grid-row: controls;
+    grid-column: main;
+    align-self: end;
+  }
+}
