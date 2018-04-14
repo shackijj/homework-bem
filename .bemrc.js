@@ -16,8 +16,9 @@ module.exports = {
                     techs: ['js', 'css'],
                     templates: {
                         js: '.bem/templates/js.js'
-                    }
-                }
+                    },
+                },
+                'fs-scheme': 'react'
             }
         }
     }
