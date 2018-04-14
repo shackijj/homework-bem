@@ -1,11 +1,14 @@
+@import url(../../../node_modules/reset-css/reset.css);
+
+html {
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    font-family: "YSText";
+}
+
 .App {
-  text-align: center;
-}
-
-.App-Title {
-  font-size: 1.5em;
-}
-
-.App-Intro {
-  font-size: large;
+    width: 96%;
+    max-width: 704px;
+    margin: 0 auto;
+    position: relative;
 }

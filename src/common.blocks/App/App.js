@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
-import { decl, Bem } from 'bem-react-core';
+import { decl } from 'bem-react-core';
 
+import Content from 'e:Content';
 import Header from 'e:Header';
+import 'b:YSText';
 
 export default decl({
   block: 'App',
@@ -9,9 +11,7 @@ export default decl({
     return (
       <Fragment>
         <Header/>
-        <Bem elem="Intro">
-          To get started, edit <code>src/blocks/App/App.js</code> and save to reload. Funk
-        </Bem>
+        <Content/>
       </Fragment>
     );
   }
