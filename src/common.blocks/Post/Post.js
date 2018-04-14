@@ -10,19 +10,19 @@ import OptionsButton from 'e:OptionsButton';
 
 export default decl({
     block: 'Post',
-    mods: ({ size }) => ({ size }),
+    mods: ({ size, image }) => ({ size, noImage: !image }),
     content({ title, titleColor, description, image, channelName }) {
       return (
         <Fragment>
             <Bem elem="Title" style={{color: titleColor}}>{title}</Bem>
             <Bem elem="Description">{description}</Bem>
-            <Bem 
+            {image && <Bem 
                 elem="Image"
                 tag="img"
                 src={`${image}@2x.png`}
                 srcSet={`${image}@3x.png 2x`}
                 alt={title}
-            />
+            />}
             {channelName && <Bem elem="ChannelName">{channelName}</Bem>}
             <LikeButton/>
             <OptionsButton/>

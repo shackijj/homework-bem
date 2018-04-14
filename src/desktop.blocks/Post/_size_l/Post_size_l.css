@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+  .Post_size_l {
+    grid-template-rows: [main-start title-start] 56px [title-end description-start] 160px [description-end controls-start] 27px [controls-end main-end];
+    grid-template-columns: [main-start image-start] 1fr [image-end content-start controls-start] 1fr [controls-end content-end main-end]
+  }
+}

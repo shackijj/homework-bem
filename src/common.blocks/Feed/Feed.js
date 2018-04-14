@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { decl } from 'bem-react-core';
 
-import Post from 'b:Post';
+import Post from 'b:Post m:size_m m:size_s m:size_l';
 
 import posts from './posts.json';
 

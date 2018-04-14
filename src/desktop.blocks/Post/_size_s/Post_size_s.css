@@ -1,0 +1,6 @@
+@media (min-width: 1024px) {
+  .Post_size_s {
+    height: auto;
+    max-height: 280px;
+  }
+}

@@ -1,0 +1,45 @@
+.Post_size_m {
+  height: 305px;
+  margin-bottom: 2.071rem;
+  grid-column: span 3;
+  grid-template-rows: [header-start] 1fr [header-end footer-start] 32px [footer-middle] 32px [footer-end];
+  grid-template-columns: [description-start main-start] 1fr [description-end controls-start] 43px [controls-end main-end];
+}
+
+.Post_size_m .Post-Title {
+  line-height: 1.643rem;
+  font-size: 1.357rem;
+  grid-row: header;
+  grid-column: main;
+  align-self: start;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 1px #fff; /* Hack for strange layering of the title and image on old Android */
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0.5rem;
+}
+
+.Post_size_m .Post-Image {
+  grid-row: header;
+  grid-column: main;
+  margin-bottom: 0.571rem;
+  align-self: end;
+}
+
+.Post_size_m .Post-Description {
+  grid-row: footer;
+  grid-column: description;
+}
+
+.Post_size_m .Post-OptionsButton {
+  grid-row: footer-start / footer-middle;
+  grid-column: controls;
+  justify-self: center;
+}
+
+.Post_size_m .Post-LikeButton {
+  grid-row: footer-middle / footer-end;
+  grid-column: controls;
+  justify-self: center;
+  align-self: end;
+}

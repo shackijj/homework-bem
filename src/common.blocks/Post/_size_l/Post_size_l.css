@@ -1,0 +1,39 @@
+.Post_size_l {
+  margin-bottom: 32px;
+  grid-column: span 6;
+  grid-gap: 0px 16px;
+  grid-template-rows: [main-start title-start] 56px [title-end description-start] 160px [description-end controls-start] 27px [controls-end main-end];
+  grid-template-columns: [main-start image-start] 1fr [image-end content-start controls-start] 224px [controls-end content-end main-end]
+}
+
+.Post_size_l .Post-Image {
+  grid-row: main;
+  grid-column: image; 
+}
+
+.Post_size_l .Post-Title {
+  grid-row: title;
+  grid-column: content;
+  line-height: 1.643rem;
+  max-height: 3.489rem;
+  overflow: hidden;
+}
+
+.Post_size_l .Post-Description {
+  grid-row: description;
+  grid-column: content;
+}
+
+.Post_size_l .Post-LikeButton {
+  grid-row: controls;
+  grid-column: content;
+  justify-self: right;
+  align-self: center;
+  padding-right: 0.929rem;
+}
+
+.Post_size_l .Post-OptionsButton {
+  grid-row: controls;
+  grid-column: content;
+  align-self: center;
+}

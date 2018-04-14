@@ -1,0 +1,78 @@
+.Post_size_s {
+  grid-column: span 2;
+  height: 224px;
+  margin-bottom: 2.714rem;
+  grid-template-rows:[main-start title-start] min-content [title-end controls-start] 1fr [no-image-start] 43px [no-image-end controls-end main-end];
+  grid-template-columns: [main-start no-image-half-start] max-content [no-image-half-end] 1fr [controls-start] 43px [controls-end main-end];
+}
+
+.Post_size_s .Post-Title {
+  grid-row: title;
+  max-height: 5.714rem;
+  overflow: hidden;
+  grid-column: main;
+  box-shadow: 0px 7px 0px 0px #fff; /** Padding emulation */
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  font-size: 1.214rem;
+  line-height: 1.429rem;
+  align-self: start;
+}
+
+.Post_size_s .Post-Image {
+  grid-row: main;
+  grid-column: main;
+  align-self: end;
+}
+
+.Post_size_s .Post-LikeButton {
+  justify-self: center;
+  grid-row: controls;
+  grid-column: controls;
+  align-self: end;
+  margin-bottom: 1.143rem;
+}
+
+.Post_size_s .Post-OptionsButton {
+  justify-self: center;
+  grid-row: controls;
+  grid-column: controls;
+  align-self: start;
+  margin-top: 1rem;
+}
+
+.Post_size_s.Post_noImage .Post-Title {
+  grid-row: title;
+  grid-column: main;
+  box-shadow: none;
+}
+
+.Post_size_s.Post_noImage .Post-Description {
+  padding-top: 1.429rem;
+  grid-column: main;
+  grid-row: controls-start / no-image-start;
+}
+
+.Post_size_s.Post_noImage .Post-OptionsButton {
+  grid-row: no-image;
+  align-self: center;
+  grid-column: no-image-half-end / main-end;
+  justify-self: left;
+  margin: 0 1.071rem;
+}
+
+.Post_size_s.Post_noImage .Post-LikeButton {
+  grid-row: no-image;
+  align-self: center;
+  grid-column: main;
+  justify-self: right;
+  margin: 0 1.071rem;
+}
+
+.Post_size_s.Post_noImage .Post-ChannelName {
+  font-weight: bold;
+  grid-column: no-image-half;
+  grid-row: no-image;
+  align-self: center;
+}
