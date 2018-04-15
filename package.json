@@ -22,6 +22,7 @@
     "build": "react-app-rewired build",
     "build-all": "npm run clear-all && CUR_LEVEL=desktop npm run build && CUR_LEVEL=phone npm run build && CUR_LEVEL=tablet npm run build",
     "clear-all": "rimraf builds/",
+    "start-demo-server": "node server/",
     "postbuild": "rimraf builds/$CUR_LEVEL && copy \"build/**/*\" builds/$CUR_LEVEL",
     "test": "jest",
     "eject": "react-scripts eject"
@@ -29,6 +30,7 @@
   "devDependencies": {
     "babel-plugin-bem-import": "^1.5.2",
     "copy": "^0.3.1",
+    "device": "^0.3.9",
     "jest-cli": "^22.0.6",
     "rimraf": "^2.6.2"
   },
